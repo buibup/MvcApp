@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MvcApp.Models.AboutModel>
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+
+@foreach(var item in Model)
+{
+    <span>@item.Name</span><span> : </span>
+    <span>@item.Location</span><br />
+}
+
+<p>Use this area to provide additional information.</p>
